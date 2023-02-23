@@ -195,7 +195,7 @@ if selected == 'Finance':
 			loan_amount = st.number_input('amount borrowed', value=0, min_value=0, max_value=int(10e10))
 
 		with col2:
-			payment_rate = st.slider('Interest rate', 0, 10)/100
+			payment_rate = st.slider('Interest rate', 0, 10)*100
 
 		with col3:
 			monthly_amount = st.number_input('Monthly re-payment', min_value=0, max_value=int(10e10))
