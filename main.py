@@ -69,7 +69,7 @@ if selected == 'Chatbot':
 		# :hand: Chatbot Assistant
 
 		''')
-	openai.api_key = "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"
+	openai.api_key = st.secrets["api_secret"]
 
 	def generate_response(prompt):
 		response = openai.Completion.create(
